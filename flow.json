@@ -414,7 +414,7 @@
         "method": "GET",
         "ret": "obj",
         "paytoqs": "ignore",
-        "url": "http://localhost:5000/PlantParam",
+        "url": "103.226.139.128:5000/PlantParam",
         "tls": "",
         "persist": false,
         "proxy": "",
