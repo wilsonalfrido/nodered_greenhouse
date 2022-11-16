@@ -27,9 +27,9 @@
             "0f7c9c0c33438eae",
             "8be5ce51311f3fe5"
         ],
-        "x": 14,
+        "x": -16,
         "y": 99,
-        "w": 492,
+        "w": 562,
         "h": 262
     },
     {
@@ -48,7 +48,7 @@
         ],
         "x": 8,
         "y": 373,
-        "w": 2054,
+        "w": 2064,
         "h": 414
     },
     {
@@ -84,9 +84,9 @@
             "8dc203b9961883fb",
             "a537dfebf221a538"
         ],
-        "x": 614,
+        "x": 574,
         "y": 399,
-        "w": 1422,
+        "w": 1472,
         "h": 242
     },
     {
@@ -118,8 +118,43 @@
         ],
         "x": 34,
         "y": 419,
-        "w": 572,
+        "w": 592,
         "h": 342
+    },
+    {
+        "id": "4e3c698d6efaab10",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "broker.hivemq.com",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "8512ab359f8b1217",
+        "type": "ui_tab",
+        "name": "Greenhouse",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
     },
     {
         "id": "0e692a28ccf039c2",
@@ -173,33 +208,6 @@
         "className": ""
     },
     {
-        "id": "4e3c698d6efaab10",
-        "type": "mqtt-broker",
-        "name": "",
-        "broker": "broker.hivemq.com",
-        "port": "1883",
-        "clientid": "",
-        "autoConnect": true,
-        "usetls": false,
-        "protocolVersion": "4",
-        "keepalive": "60",
-        "cleansession": true,
-        "birthTopic": "",
-        "birthQos": "0",
-        "birthPayload": "",
-        "birthMsg": {},
-        "closeTopic": "",
-        "closeQos": "0",
-        "closePayload": "",
-        "closeMsg": {},
-        "willTopic": "",
-        "willQos": "0",
-        "willPayload": "",
-        "willMsg": {},
-        "userProps": "",
-        "sessionExpiry": ""
-    },
-    {
         "id": "8352ff6457d9fdd1",
         "type": "ui_group",
         "name": "Greenhouse A",
@@ -233,99 +241,100 @@
         "className": ""
     },
     {
-        "id": "8512ab359f8b1217",
-        "type": "ui_tab",
-        "name": "Greenhouse",
-        "icon": "dashboard",
-        "disabled": false,
-        "hidden": false
-    },
-    {
-        "id": "a62ecc25d2385323",
-        "type": "ui_button",
-        "z": "4f19ba8da7e1ae05",
-        "g": "ab8444a8b4a92254",
-        "name": "",
-        "group": "2e5d064772b3ed6b",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "label": "Greenhouse A",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "payload": "{\"group\":{\"hide\":[\"Greenhouse_Main\"],\"show\":[\"Greenhouse_Greenhouse_A\",\"Greenhouse_Display_Param\"]}}",
-        "payloadType": "json",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 120,
-        "y": 140,
-        "wires": [
-            [
-                "50bcf5ca4ba41ff5"
-            ]
-        ]
-    },
-    {
-        "id": "bfe2a87c31c68c87",
-        "type": "ui_button",
-        "z": "4f19ba8da7e1ae05",
-        "g": "ab8444a8b4a92254",
-        "name": "",
-        "group": "2e5d064772b3ed6b",
-        "order": 2,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "label": "Greenhouse B",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 120,
-        "y": 200,
-        "wires": [
-            [
-                "3d6dcc318c6948f3"
-            ]
-        ]
-    },
-    {
-        "id": "dc7e8503195c4c73",
-        "type": "ui_button",
-        "z": "4f19ba8da7e1ae05",
-        "g": "ab8444a8b4a92254",
-        "name": "",
-        "group": "2e5d064772b3ed6b",
-        "order": 3,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "label": "Greenhouse C",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 120,
-        "y": 260,
-        "wires": [
-            [
-                "c96b0153f9f80ed1"
-            ]
-        ]
+        "id": "cbdc33f1654c71af",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
     },
     {
         "id": "792243bad594d3e7",
@@ -348,150 +357,6 @@
                 "7099cfd2b38f3517",
                 "5d3b4e8281a06233"
             ]
-        ]
-    },
-    {
-        "id": "7099cfd2b38f3517",
-        "type": "ui_text",
-        "z": "4f19ba8da7e1ae05",
-        "g": "bdf0632383456548",
-        "group": "8352ff6457d9fdd1",
-        "order": 4,
-        "width": 6,
-        "height": 1,
-        "name": "",
-        "label": "Water Temp",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "className": "",
-        "x": 510,
-        "y": 460,
-        "wires": []
-    },
-    {
-        "id": "5d3b4e8281a06233",
-        "type": "ui_chart",
-        "z": "4f19ba8da7e1ae05",
-        "g": "bdf0632383456548",
-        "name": "",
-        "group": "8352ff6457d9fdd1",
-        "order": 1,
-        "width": 6,
-        "height": 4,
-        "label": "Water Temp",
-        "chartType": "line",
-        "legend": "false",
-        "xformat": "HH:mm:ss",
-        "interpolate": "linear",
-        "nodata": "",
-        "dot": false,
-        "ymin": "",
-        "ymax": "",
-        "removeOlder": 1,
-        "removeOlderPoints": "",
-        "removeOlderUnit": "3600",
-        "cutout": 0,
-        "useOneColor": false,
-        "useUTC": false,
-        "colors": [
-            "#1f77b4",
-            "#aec7e8",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "outputs": 1,
-        "useDifferentColor": false,
-        "className": "",
-        "x": 510,
-        "y": 500,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "708e296674fe7997",
-        "type": "ui_button",
-        "z": "4f19ba8da7e1ae05",
-        "g": "bdf0632383456548",
-        "name": "",
-        "group": "8352ff6457d9fdd1",
-        "order": 8,
-        "width": 12,
-        "height": 1,
-        "passthru": false,
-        "label": "Back to main menu",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "payload": "{\"group\":{\"hide\":[\"Greenhouse_Greenhouse_A\",\"Greenhouse_Display_Param\",\"Greenhouse_Edit_Param\"],\"show\":[\"Greenhouse_Main\"]}}",
-        "payloadType": "json",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 150,
-        "y": 720,
-        "wires": [
-            [
-                "ebd2d6f19d858103"
-            ]
-        ]
-    },
-    {
-        "id": "50bcf5ca4ba41ff5",
-        "type": "ui_ui_control",
-        "z": "4f19ba8da7e1ae05",
-        "g": "ab8444a8b4a92254",
-        "name": "",
-        "events": "all",
-        "x": 420,
-        "y": 140,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "3d6dcc318c6948f3",
-        "type": "ui_ui_control",
-        "z": "4f19ba8da7e1ae05",
-        "g": "ab8444a8b4a92254",
-        "name": "",
-        "events": "all",
-        "x": 420,
-        "y": 200,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "c96b0153f9f80ed1",
-        "type": "ui_ui_control",
-        "z": "4f19ba8da7e1ae05",
-        "g": "ab8444a8b4a92254",
-        "name": "",
-        "events": "all",
-        "x": 420,
-        "y": 260,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "ebd2d6f19d858103",
-        "type": "ui_ui_control",
-        "z": "4f19ba8da7e1ae05",
-        "g": "bdf0632383456548",
-        "name": "",
-        "events": "all",
-        "x": 380,
-        "y": 720,
-        "wires": [
-            []
         ]
     },
     {
@@ -541,72 +406,6 @@
         ]
     },
     {
-        "id": "e552acea45b067d2",
-        "type": "ui_text",
-        "z": "4f19ba8da7e1ae05",
-        "g": "bdf0632383456548",
-        "group": "8352ff6457d9fdd1",
-        "order": 5,
-        "width": 6,
-        "height": 1,
-        "name": "",
-        "label": "pH",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "className": "",
-        "x": 470,
-        "y": 540,
-        "wires": []
-    },
-    {
-        "id": "c3ed478351cb3174",
-        "type": "ui_text",
-        "z": "4f19ba8da7e1ae05",
-        "g": "bdf0632383456548",
-        "group": "8352ff6457d9fdd1",
-        "order": 6,
-        "width": 6,
-        "height": 1,
-        "name": "",
-        "label": "EC",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "className": "",
-        "x": 430,
-        "y": 620,
-        "wires": []
-    },
-    {
-        "id": "c477f84430bd83d4",
-        "type": "ui_button",
-        "z": "4f19ba8da7e1ae05",
-        "g": "0ff3ce8af5e9119e",
-        "name": "",
-        "group": "8293a78a191dd3d7",
-        "order": 5,
-        "width": 8,
-        "height": 1,
-        "passthru": false,
-        "label": "Edit Parameter",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "payload": "{\"group\":{\"hide\":[\"Greenhouse_Display_Param\"],\"show\":[\"Greenhouse_Edit_Param\"]}}",
-        "payloadType": "json",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 720,
-        "y": 500,
-        "wires": [
-            [
-                "8d7c1bfbd5bf628e",
-                "297cc26c509df7a0"
-            ]
-        ]
-    },
-    {
         "id": "8d7c1bfbd5bf628e",
         "type": "http request",
         "z": "4f19ba8da7e1ae05",
@@ -629,90 +428,6 @@
             [
                 "aa00b4ef57ceced6"
             ]
-        ]
-    },
-    {
-        "id": "652b505cfb1e3005",
-        "type": "ui_button",
-        "z": "4f19ba8da7e1ae05",
-        "g": "0ff3ce8af5e9119e",
-        "name": "",
-        "group": "dd116dcad9e28d42",
-        "order": 4,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "label": "Back",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "dsa",
-        "payload": "{\"group\":{\"hide\":[\"Greenhouse_Edit_Param\"],\"show\":[\"Greenhouse_Display_Param\"]}}",
-        "payloadType": "json",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 690,
-        "y": 560,
-        "wires": [
-            [
-                "7e5b3341c3332e52"
-            ]
-        ]
-    },
-    {
-        "id": "91d9ca208b66be87",
-        "type": "ui_button",
-        "z": "4f19ba8da7e1ae05",
-        "g": "0ff3ce8af5e9119e",
-        "name": "",
-        "group": "dd116dcad9e28d42",
-        "order": 3,
-        "width": 8,
-        "height": 1,
-        "passthru": false,
-        "label": "Save Parameter",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "mi-videogame_asset",
-        "payload": "save",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 1100,
-        "y": 560,
-        "wires": [
-            [
-                "4f6030654acc2b15"
-            ]
-        ]
-    },
-    {
-        "id": "297cc26c509df7a0",
-        "type": "ui_ui_control",
-        "z": "4f19ba8da7e1ae05",
-        "g": "0ff3ce8af5e9119e",
-        "name": "",
-        "events": "all",
-        "x": 900,
-        "y": 520,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "7e5b3341c3332e52",
-        "type": "ui_ui_control",
-        "z": "4f19ba8da7e1ae05",
-        "g": "0ff3ce8af5e9119e",
-        "name": "",
-        "events": "all",
-        "x": 880,
-        "y": 560,
-        "wires": [
-            []
         ]
     },
     {
@@ -755,41 +470,6 @@
         "wires": []
     },
     {
-        "id": "589503a873910777",
-        "type": "ui_dropdown",
-        "z": "4f19ba8da7e1ae05",
-        "g": "0ff3ce8af5e9119e",
-        "name": "",
-        "label": "Jenis Tanaman",
-        "tooltip": "",
-        "place": "Select option",
-        "group": "dd116dcad9e28d42",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "multiple": false,
-        "options": [
-            {
-                "label": "",
-                "value": "",
-                "type": "str"
-            }
-        ],
-        "payload": "",
-        "topic": "topic",
-        "topicType": "msg",
-        "className": "",
-        "x": 1100,
-        "y": 520,
-        "wires": [
-            [
-                "7379555e576266d5",
-                "d7b2cb05647422f0"
-            ]
-        ]
-    },
-    {
         "id": "250f19b1102dc6ef",
         "type": "function",
         "z": "4f19ba8da7e1ae05",
@@ -811,25 +491,6 @@
                 "a537dfebf221a538"
             ]
         ]
-    },
-    {
-        "id": "0eb2451c6dabef58",
-        "type": "ui_list",
-        "z": "4f19ba8da7e1ae05",
-        "g": "0ff3ce8af5e9119e",
-        "group": "dd116dcad9e28d42",
-        "name": "",
-        "order": 2,
-        "width": 8,
-        "height": 6,
-        "lineType": "two",
-        "actionType": "none",
-        "allowHTML": false,
-        "outputs": 0,
-        "topic": "",
-        "x": 1510,
-        "y": 540,
-        "wires": []
     },
     {
         "id": "d7b2cb05647422f0",
@@ -910,45 +571,6 @@
                 "686cae5a7179364f"
             ]
         ]
-    },
-    {
-        "id": "c49d0f4cd68472df",
-        "type": "ui_toast",
-        "z": "4f19ba8da7e1ae05",
-        "g": "0ff3ce8af5e9119e",
-        "position": "top right",
-        "displayTime": "3",
-        "highlight": "",
-        "sendall": true,
-        "outputs": 0,
-        "ok": "OK",
-        "cancel": "",
-        "raw": false,
-        "className": "",
-        "topic": "",
-        "name": "",
-        "x": 1930,
-        "y": 440,
-        "wires": []
-    },
-    {
-        "id": "f418b04285445189",
-        "type": "ui_list",
-        "z": "4f19ba8da7e1ae05",
-        "g": "0ff3ce8af5e9119e",
-        "group": "8293a78a191dd3d7",
-        "name": "",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "lineType": "two",
-        "actionType": "none",
-        "allowHTML": false,
-        "outputs": 0,
-        "topic": "",
-        "x": 1890,
-        "y": 480,
-        "wires": []
     },
     {
         "id": "686cae5a7179364f",
@@ -1045,10 +667,240 @@
         ]
     },
     {
+        "id": "589503a873910777",
+        "type": "ui_dropdown",
+        "z": "4f19ba8da7e1ae05",
+        "name": "",
+        "label": "Jenis Tanaman",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "dd116dcad9e28d42",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "",
+                "value": "",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 1100,
+        "y": 520,
+        "wires": [
+            [
+                "7379555e576266d5",
+                "d7b2cb05647422f0"
+            ]
+        ]
+    },
+    {
+        "id": "a62ecc25d2385323",
+        "type": "ui_button",
+        "z": "4f19ba8da7e1ae05",
+        "name": "",
+        "group": "2e5d064772b3ed6b",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Greenhouse A",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "{\"group\":{\"hide\":[\"Greenhouse_Main\"],\"show\":[\"Greenhouse_Greenhouse_A\",\"Greenhouse_Display_Param\"]}}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 120,
+        "y": 140,
+        "wires": [
+            [
+                "50bcf5ca4ba41ff5"
+            ]
+        ]
+    },
+    {
+        "id": "bfe2a87c31c68c87",
+        "type": "ui_button",
+        "z": "4f19ba8da7e1ae05",
+        "name": "",
+        "group": "2e5d064772b3ed6b",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Greenhouse B",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 120,
+        "y": 200,
+        "wires": [
+            [
+                "3d6dcc318c6948f3"
+            ]
+        ]
+    },
+    {
+        "id": "dc7e8503195c4c73",
+        "type": "ui_button",
+        "z": "4f19ba8da7e1ae05",
+        "name": "",
+        "group": "2e5d064772b3ed6b",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Greenhouse C",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 120,
+        "y": 260,
+        "wires": [
+            [
+                "c96b0153f9f80ed1"
+            ]
+        ]
+    },
+    {
+        "id": "708e296674fe7997",
+        "type": "ui_button",
+        "z": "4f19ba8da7e1ae05",
+        "name": "",
+        "group": "8352ff6457d9fdd1",
+        "order": 8,
+        "width": 12,
+        "height": 1,
+        "passthru": false,
+        "label": "Back to main menu",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "{\"group\":{\"hide\":[\"Greenhouse_Greenhouse_A\",\"Greenhouse_Display_Param\",\"Greenhouse_Edit_Param\"],\"show\":[\"Greenhouse_Main\"]}}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 150,
+        "y": 720,
+        "wires": [
+            [
+                "ebd2d6f19d858103"
+            ]
+        ]
+    },
+    {
+        "id": "c477f84430bd83d4",
+        "type": "ui_button",
+        "z": "4f19ba8da7e1ae05",
+        "name": "",
+        "group": "8293a78a191dd3d7",
+        "order": 5,
+        "width": 8,
+        "height": 1,
+        "passthru": false,
+        "label": "Edit Parameter",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "{\"group\":{\"hide\":[\"Greenhouse_Display_Param\"],\"show\":[\"Greenhouse_Edit_Param\"]}}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 720,
+        "y": 500,
+        "wires": [
+            [
+                "8d7c1bfbd5bf628e",
+                "297cc26c509df7a0"
+            ]
+        ]
+    },
+    {
+        "id": "652b505cfb1e3005",
+        "type": "ui_button",
+        "z": "4f19ba8da7e1ae05",
+        "name": "",
+        "group": "dd116dcad9e28d42",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Back",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "dsa",
+        "payload": "{\"group\":{\"hide\":[\"Greenhouse_Edit_Param\"],\"show\":[\"Greenhouse_Display_Param\"]}}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 690,
+        "y": 560,
+        "wires": [
+            [
+                "7e5b3341c3332e52"
+            ]
+        ]
+    },
+    {
+        "id": "91d9ca208b66be87",
+        "type": "ui_button",
+        "z": "4f19ba8da7e1ae05",
+        "name": "",
+        "group": "dd116dcad9e28d42",
+        "order": 3,
+        "width": 8,
+        "height": 1,
+        "passthru": false,
+        "label": "Save Parameter",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "mi-videogame_asset",
+        "payload": "save",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1100,
+        "y": 560,
+        "wires": [
+            [
+                "4f6030654acc2b15"
+            ]
+        ]
+    },
+    {
         "id": "0f7c9c0c33438eae",
         "type": "ui_button",
         "z": "4f19ba8da7e1ae05",
-        "g": "ab8444a8b4a92254",
         "name": "",
         "group": "2e5d064772b3ed6b",
         "order": 4,
@@ -1074,14 +926,96 @@
         ]
     },
     {
-        "id": "8be5ce51311f3fe5",
-        "type": "ui_ui_control",
+        "id": "7099cfd2b38f3517",
+        "type": "ui_text",
         "z": "4f19ba8da7e1ae05",
-        "g": "ab8444a8b4a92254",
+        "group": "8352ff6457d9fdd1",
+        "order": 4,
+        "width": 6,
+        "height": 1,
         "name": "",
-        "events": "all",
-        "x": 420,
-        "y": 320,
+        "label": "Water Temp",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 510,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "e552acea45b067d2",
+        "type": "ui_text",
+        "z": "4f19ba8da7e1ae05",
+        "group": "8352ff6457d9fdd1",
+        "order": 5,
+        "width": 6,
+        "height": 1,
+        "name": "",
+        "label": "pH",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 470,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "c3ed478351cb3174",
+        "type": "ui_text",
+        "z": "4f19ba8da7e1ae05",
+        "group": "8352ff6457d9fdd1",
+        "order": 6,
+        "width": 6,
+        "height": 1,
+        "name": "",
+        "label": "EC",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 430,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "5d3b4e8281a06233",
+        "type": "ui_chart",
+        "z": "4f19ba8da7e1ae05",
+        "name": "",
+        "group": "8352ff6457d9fdd1",
+        "order": 1,
+        "width": 6,
+        "height": 4,
+        "label": "Water Temp",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 510,
+        "y": 500,
         "wires": [
             []
         ]
@@ -1090,7 +1024,6 @@
         "id": "a293b72ae4754f62",
         "type": "ui_chart",
         "z": "4f19ba8da7e1ae05",
-        "g": "bdf0632383456548",
         "name": "",
         "group": "8352ff6457d9fdd1",
         "order": 3,
@@ -1135,7 +1068,6 @@
         "id": "114289393f83bc87",
         "type": "ui_chart",
         "z": "4f19ba8da7e1ae05",
-        "g": "bdf0632383456548",
         "name": "",
         "group": "8352ff6457d9fdd1",
         "order": 2,
@@ -1175,5 +1107,144 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "c49d0f4cd68472df",
+        "type": "ui_toast",
+        "z": "4f19ba8da7e1ae05",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 1930,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "50bcf5ca4ba41ff5",
+        "type": "ui_ui_control",
+        "z": "4f19ba8da7e1ae05",
+        "name": "",
+        "events": "all",
+        "x": 420,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3d6dcc318c6948f3",
+        "type": "ui_ui_control",
+        "z": "4f19ba8da7e1ae05",
+        "name": "",
+        "events": "all",
+        "x": 420,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c96b0153f9f80ed1",
+        "type": "ui_ui_control",
+        "z": "4f19ba8da7e1ae05",
+        "name": "",
+        "events": "all",
+        "x": 420,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ebd2d6f19d858103",
+        "type": "ui_ui_control",
+        "z": "4f19ba8da7e1ae05",
+        "name": "",
+        "events": "all",
+        "x": 380,
+        "y": 720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "297cc26c509df7a0",
+        "type": "ui_ui_control",
+        "z": "4f19ba8da7e1ae05",
+        "name": "",
+        "events": "all",
+        "x": 900,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7e5b3341c3332e52",
+        "type": "ui_ui_control",
+        "z": "4f19ba8da7e1ae05",
+        "name": "",
+        "events": "all",
+        "x": 880,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8be5ce51311f3fe5",
+        "type": "ui_ui_control",
+        "z": "4f19ba8da7e1ae05",
+        "name": "",
+        "events": "all",
+        "x": 420,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0eb2451c6dabef58",
+        "type": "ui_list",
+        "z": "4f19ba8da7e1ae05",
+        "group": "dd116dcad9e28d42",
+        "name": "",
+        "order": 2,
+        "width": 8,
+        "height": 6,
+        "lineType": "two",
+        "actionType": "none",
+        "allowHTML": false,
+        "outputs": 0,
+        "topic": "",
+        "x": 1510,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "f418b04285445189",
+        "type": "ui_list",
+        "z": "4f19ba8da7e1ae05",
+        "group": "8293a78a191dd3d7",
+        "name": "",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "lineType": "two",
+        "actionType": "none",
+        "allowHTML": false,
+        "outputs": 0,
+        "topic": "",
+        "x": 1890,
+        "y": 480,
+        "wires": []
     }
 ]
